@@ -2,6 +2,7 @@ console.log("Web serverni boshlash");
 const express = require("express");
 const app = express();
 const http = require("http");
+
 // 1: Kirish CODE
 app.use(express.static("public"));
 app.use(express.json());
@@ -14,11 +15,13 @@ app.set("view engine", "ejs");
 
 
 // 4: Routing CODE
-app.get("/hello", function(req, res) {
-    res.end(`<h1>HELLO WORLD</h1>`);
+app.post("/create-item", (req, res) => {
+    console.log(req);
+    res.json({test:"success"});
 });
-app.get("/gift", function(req, res) {
-    res.end(`<h1>Siz sovgalar bolimidasiz</h1>`);
+
+app.get("/", function(req, res) {
+    res.render("harid");
 });
 
 const server = http.createServer(app);
