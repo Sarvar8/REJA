@@ -1,3 +1,33 @@
+// A-TASK: 
+
+// Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+// MASALAN countLetter("e", "engineer") 3ni return qiladi.
+
+console.log("========")
+function countLetter(letter, sentence) {
+    letter = letter.toLowerCase();
+    sentence = sentence.toLowerCase();
+    if(typeof letter === 'string' && typeof sentence === 'string') {
+        let count = 0;
+        for(let i = 0; i<sentence.length; i++) {
+            if (sentence[i] === letter) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return 'You should write here string';
+        } else {
+            return count;
+     } 
+    }
+}
+console.log(countLetter('A', 'Gayrat qilamiza olga'));
+
+
+
+
+
+console.log("==================");
 console.log("Jack Ma Maslaxatlari");
 const list = [
     "yaxshi talaba bo'ling", // 0-20
