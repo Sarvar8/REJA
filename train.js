@@ -27,7 +27,7 @@ console.log(countLetter('A', 'Gayrat qilamiza olga'));
 
 
 
-console.log("==================");
+console.log("========");
 console.log("Jack Ma Maslaxatlari");
 const list = [
     "yaxshi talaba bo'ling", // 0-20

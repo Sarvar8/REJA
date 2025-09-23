@@ -16,7 +16,6 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background: #f7f6b9;
 }
 
 .main_frame .left_frame {
@@ -32,30 +31,144 @@
 
 .main_frame .midd_frame {
     position: relative;
-    width: 970px;
+    width: 971px;
     height: 1259px;
     margin-left: 30px;
     margin-right: 27px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+
+
+
+    .content {
+  display: flex;
+  flex-direction: column;
 }
+.content .hero {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding-left: 25px;
+}
+.hero-text {
+  width: 500px;
+  height: 118px;
+  top: 93px;
+  left: 395px;
+  gap: 0px;
+  opacity: 0px;
+}
+.cta-hire {
+  width: 154px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px 0px 0px 0px;
+  padding-top: 25px;
+
+  background-color: #ffb400;
+}
+.content .section-title {
+  /* background-color: #f0f0f6; */
+}
+.content .section-title h5 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.55px;
+  text-align: left;
+
+  text-align: center;
+}
+.content .section-subtitle {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -40px;
+  padding-left: 280px;
+  text-align: center;
+  width: 438px;
+  height: 68px;
+}
+.services-row-1 {
+  display: flex;
+  flex-direction: row;
+}
+.services-row-2 {
+  display: flex;
+  flex-direction: row;
+}
+.service-card {
+  padding-top: 30px;
+  width: 310px;
+  height: 225px;
+
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+
+}
+
+.color_1 {
+    color: #b4b4b7;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.text111 {
+    text-align: center;
+    padding: 15px;
+}
+
+.content h1 {
+  width: 500px;
+  height: 118px;
+
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59.33px;
+  text-align: left;
+}
+
+}
+
+
 
 .main_frame .right_frame {
     position: relative;
     width: 108px;
     height: 1315px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+.nav-rail .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px;
+}
+.nav-menu {
+  width: 65px;
+  height: 493px;
+}
 }
 
 .main_frame .left_1 {
     position: relative;
     width: 228px;
     height: 267px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 37px;
     display: flex;
     flex-direction: column;
@@ -154,36 +267,224 @@
     position: relative;
     width: 221px;
     height: 126px;
-    margin-left: 44px;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_frame .left_2_1 {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    background-color: orange;
+    padding: 6px 10px;
+    font-weight: bold;
+    width: 100px;
+    margin-right: 10px;
+    text-align: left;
+    flex: 0;
+}
+
+.value {
+    color: #333;
+    padding: 6px 0;
+    text-align: right;
+    flex: 2;
+    
+    
+
+    
+}
+
+.available {
+    color: green;
+    font-weight: bold;
 }
 
 
+    
 .main_frame .left_3 {
     position: relative;
-    width: 220px;
+    width: 225px;
     height: 153px;
-    margin-top: 25px;
-    margin-left: 45px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    
 
-    background-color: aqua;
+ .languages-section {
+    padding: 15px;
+    background: white;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.language-item {
+    margin-bottom: 15px;
+}
+
+.language-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.language-name {
+    color: #666;
+    font-size: 14px;
+}
+
+.language-percent {
+    color: #333;
+    font-size: 14px;
+}
+
+.language-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+}
+
+.language-progress {
+    height: 100%;
+    background-color: #ffa500;
+    border-radius: 2px;
+}
 }
 
 .main_frame .left_4 {
     position: relative;
-    width: 220px;
-    height: 252px;
-    margin-top: 25px;
-    margin-left: 45px;
+    width: 225px;
+    height: 153px;
+    margin-top: 1px;
+    margin-left: 30px;
 
-    background-color: aqua;
+    .skill-section {
+    padding: 15px;
+    background: white;
+}
+
+.skill-sarlavha {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    color: #666;
+    font-size: 14px;
+}
+
+.skill-percent {
+    color: #333;
+    font-size: 14px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #ffa500;
+    border-radius: 2px;
+}
 }
 
 .main_frame .left_5 {
     position: relative;
     width: 186px;
     height: 148px;
-    margin-top: 25px;
+    margin-top: 1px;
     margin-left: 45px;
 
-    background-color: aqua;
+ .extra-skills-section {
+    padding: 1px 0;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-icon {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.icon-squares {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffa500;
+    position: absolute;
+    background: transparent;
+}
+
+.square:first-child {
+    top: 0;
+    left: 0;
+}
+
+.square:last-child {
+    top: 4px;
+    left: 4px;
+}
+
+.skill-text {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
 }
