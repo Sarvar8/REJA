@@ -2,10 +2,11 @@ const http = require("http");
 
 const mongodb = require("mongodb");
 let db;
-const connectionString = "mongodb+srv://sarvar_8:Sarvar9898@cluster0.vhavhpw.mongodb.net/Reja";
+const connectionString = "mongodb+srv://sarvar_8:Sarvar9898@cluster0.vhavhpw.mongodb.net/Reja?retryWrites=true&w=majority&appName=Cluster0";
 
 
-mongodb.connect(connectionString, {useNewUrlParser: true,
+mongodb.connect(connectionString, {
+    useNewUrlParser: true,
     useUnifiedTopology: true,
 },
  (err, client) => {
@@ -14,7 +15,7 @@ mongodb.connect(connectionString, {useNewUrlParser: true,
       
        module.exports = client;
        const app = require("./app");
-          console.log("connection secceed ");
+          console.log("connection secceed");
         
   const server = http.createServer(app);
  let PORT = 3000;
