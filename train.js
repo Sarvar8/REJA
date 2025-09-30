@@ -1,51 +1,79 @@
+// TASK D : 
+
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+
+
+
+
+function check(str1, str2) {
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
+  return str1.split("").sort().join("") === str2.split("").sort().join("");
+}
+
+console.log(check("JACOB", "bocaj"));
+
+
+
+// function check(String1, String2) {
+//   return String1.split("").sort().join("") === String2.split("").sort().join("");
+// }
+
+// console.log(check("mitgroup", "gmtiprou"));
+
+
+
 // MITASK-C 
 
 // Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin, hamda classning 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul. Har bir method ishga tushgan vaqt ham log qilinsin.
 // MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
 
 
-const moment = require ("moment");
+// const moment = require ("moment");
 
-class Shop {
-  constructor(coffee, tea, milk) {
-    this.coffee = coffee;
-    this.tea = tea;
-    this.milk = milk;
-  }
+// class Shop {
+//   constructor(coffee, tea, milk) {
+//     this.coffee = coffee;
+//     this.tea = tea;
+//     this.milk = milk;
+//   }
 
-  vaqt() {
-    return moment().format("HH:mm");
-  }
+//   vaqt() {
+//     return moment().format("HH:mm");
+//   }
 
-  qoldiq() {
-    console.log(
-      `Hozir ${this.vaqt()} da ${this.coffee} ta karobka coffee, ${this.tea} ta karobka tea, ${this.milk} ta karobka milk bor!`
-    );
-  }
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this.vaqt()} da ${this.coffee} ta karobka coffee, ${this.tea} ta karobka tea, ${this.milk} ta karobka milk bor!`
+//     );
+//   }
 
-  sotish(nomi, soni) {
-    this[nomi] -= soni;
-    console.log(`Hozir ${this.vaqt()} da ${soni} ta ${nomi} sotildi!`);
-  }
+//   sotish(nomi, soni) {
+//     this[nomi] -= soni;
+//     console.log(`Hozir ${this.vaqt()} da ${soni} ta ${nomi} sotildi!`);
+//   }
 
-  qabul(nomi, soni) {
-    this[nomi] += soni;
-    console.log(`Hozir ${this.vaqt()} da ${soni} ta ${nomi} qabul qilindi!`);
-  }
-}
+//   qabul(nomi, soni) {
+//     this[nomi] += soni;
+//     console.log(`Hozir ${this.vaqt()} da ${soni} ta ${nomi} qabul qilindi!`);
+//   }
+// }
 
 
-const shop = new Shop(4, 5, 2);
+// const shop = new Shop(4, 5, 2);
 
-shop.qoldiq();
+// shop.qoldiq();
 
-shop.sotish("coffee", 3);
+// shop.sotish("coffee", 3);
 
-shop.qabul("milk", 4);
+// shop.qabul("milk", 4);
 
-shop.sotish("tea", 2);
+// shop.sotish("tea", 2);
 
-shop.qoldiq();
+// shop.qoldiq();
 
 
 
