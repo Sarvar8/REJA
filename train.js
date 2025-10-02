@@ -1,3 +1,21 @@
+// E-TASK: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+
+function getReverse(str) {
+  let result = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
+  }
+  return result;
+}
+
+console.log(getReverse("JACOB"));
+
+
+
 // TASK D : 
 
 // Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
@@ -8,13 +26,13 @@
 
 
 
-function check(str1, str2) {
-  str1 = str1.toLowerCase();
-  str2 = str2.toLowerCase();
-  return str1.split("").sort().join("") === str2.split("").sort().join("");
-}
+// function check(str1, str2) {
+//   // str1 = str1.toLowerCase();
+//   // str2 = str2.toLowerCase();
+//   return str1.toLowerCase().split("").sort().join("") === str2.toLowerCase().split("").sort().join("");
+// }
 
-console.log(check("JACOB", "bocaj"));
+// console.log(check("JACOB", "bocaj"));
 
 
 
